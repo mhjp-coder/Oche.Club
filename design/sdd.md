@@ -1,13 +1,14 @@
+# Software Design Document Template
 
-Software Design Document Template
-1. About
+## About
+
 • What is the software application or feature?
 • Who’s it intended for?
 • What problem does the software solve?
 • How is it going to work?
 • What are the main concepts that are involved and how are they related?
 
-Notes
+**Notes**
 When you define what a software application or feature does, what concepts are involved
 and how everything is related, I often follow a “zoom out and zoom in” approach. As a first
 step, I try to think as broadly as possible about the software and what it would entail (“zoom
@@ -21,14 +22,14 @@ can delay building? What’s the low hanging fruit? How does the order of buildi
 impact the complexity of the work? Are there parts we should build first so we can test
 everything quicker, leading to more efficient development later?
 
+## User Interface
 
-2. User Interface
 • What are the main user stories (happy flows + alternative flows)?
 • If you’re adding a new feature to an existing software application, what impact does
 the feature have on the overall structure of the interface? (are there big changes in the
 organization of menus, navigation, and so on?)
 
-Notes
+**Notes**
 You can also provide UI mockups or wireframes here as a part of the user stories to clarify
 what the flows are going to look like.
 When I design software, I always must remind myself that I’m doing this for someone else,
@@ -37,8 +38,8 @@ make sense to the user. Sometimes, that means you need to introduce an extra con
 clarify how your system works. And sometimes the most generic solution is not the best
 solution for the user.
 
+## Technical Specification
 
-3. Technical Specification
 • What technical details do developers need to know to develop the software or new
 feature?
 • Are there new tables to add to the database? What fields?
@@ -48,7 +49,7 @@ that are important?
 used to model the concepts and relationships?
 • What third-party software is needed to build the software or feature?
 
-Notes
+**Notes**
 You can use UML to draw out the main classes that will be added and how they fit into the
 rest of the system.
 When you design your classes and methods, consider design principles such as SOLID.
@@ -60,8 +61,8 @@ design problems. There are also quite a few videos about those on my channel.
 This is also a good section to describe specific edge cases that you want the system to handle
 correctly, for example what should happen in case of a network connection error.
 
+## Testing and Security
 
-4. Testing and Security
 • Are there specific coverage goals for the unit tests?
 • What kinds of tests are needed (unit, regression, end-to-end, etc)?
 •
@@ -72,7 +73,7 @@ when adding this feature?
 (new feature only) How does the feature impact the security of the software? Is there
 a need for a security audit before the feature is shipped?
 
-Notes
+**Notes**
 Everybody always talks about how important testing is. One of the main reasons people
 mention is that it helps you find bugs and produce better, more reliable code. That’s part of it,
 
@@ -94,13 +95,13 @@ but focus on getting a basic version of the feature done so you can evaluate whe
 really what you or your users want. In fact, assume that every line of code you write you’re
 going to throw away at some point: don’t get attached to the code you write.
 
+## Deployment
 
-5. Deployment
 • Are there any architectural or DevOps changes needed (e.g. adding an extra
 microservice, changes in deployment pipelines, adding secrets to services)?
 • Are there any migration scripts that need to be written?
 
-Notes
+**Notes**
 Especially if you create a tool that runs in the cloud, it’s useful to have some kind of staging
 environment that closely mimics the production environment. In my company, we have four
 different environments (this is also called a DTAP street):
@@ -118,8 +119,8 @@ break because of issues with configuration, connection with other services, and 
 Acceptance version is only used to do final tests before releasing a new version. Here we
 verify that existing users will still be able to log in and have access to their data.
 
+## Planning
 
-6. Planning
 • How much time will developing the software or feature cost?
 • What are the steps and how much time does step take?
 • What are the developmental milestones and in what order?
@@ -128,7 +129,7 @@ out something isn’t feasible?
 • What parts are absolutely required, and what parts can optionally be done at a later
 stage? (i.e. the Definition of Done)
 
-Notes
+**Notes**
 Especially if you’re a beginning developer, it’s hard to estimate how much time developing a
 piece of software takes. You will get better at this after doing it a couple of times. What helps
 me is first figuring out what the main risk factors are. For example, if you want to add a
@@ -137,13 +138,13 @@ the process of building the actual integration code (which will probably reside 
 Teams App store), and not the user interface additions in your app to set it up. The more risk
 factors you have in the software design, the more time you need to reserve for nasty surprises.
 
+## Broader Context
 
-7. Broader Context
 • What are limitations of the current design?
 • What are possible extensions to think about for the future?
 • Any other considerations?
 
-Notes
+~~**Notes**~~
 Whenever I design software, I always like to include a few “moonshot” ideas: “It would be
 really cool if the software could also do X”. The reason this is useful is that this puts you in a
 very open mindset that sometimes leads to new insights. Also, when you’re developing the

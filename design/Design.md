@@ -1,6 +1,6 @@
 # Oche.Club Darts Design Document
 
-# About the Application
+## About the Application
 
 - The software application, Oche.Club, is a comprehensive Dart Management System. It's designed to cater to a wide range of dart players and enthusiasts, from individuals who play casually to organized teams participating in competitive leagues. A player can be an individual or a group of individuals (team) participating in the game. The system is flexible enough to handle various game setups, including single player games, multi-player games, team games, and even complex league tournaments. In a league setup, the system can manage multiple teams playing against each other in different formats, such as round-robin or bracket-style tournaments. This versatility makes the system a one-stop solution for all dart scoring and management needs, regardless of the level of play or complexity of the tournament structure.
 
@@ -10,7 +10,6 @@
 
 - The main concepts involved in the application are the players, rounds, scores, and game rules. Players are the individuals or teams participating in the game. Each player takes turns playing rounds, where they throw their darts and score points based on where the darts land on the dartboard. The application keeps track of these scores for each round and adds them to the players' total scores. The game rules are the set of guidelines that determine how points are scored and how the winner is decided. These rules can vary depending on the specific game variation being played. For example, in a standard game of darts, the objective is to be the first player to reduce a fixed score, commonly 501 or 301, to zero. However, other game variations may have different objectives and scoring methods. The application applies these game rules to calculate the total scores and determine the winner. It also handles special situations defined by the rules, such as 'busts' where a player's score exceeds the remaining total, requiring the player's score to be reset to the previous round's total. By incorporating these concepts into its design, the application provides a comprehensive and authentic dart gaming experience.
 
-
 ## Technical Specification
 
 - What technical details do developers need to know to develop the software or new feature?
@@ -19,9 +18,8 @@
 - What will be the overall design? Which classes are needed? What design patterns are used to model the concepts and relationships?
 - What third-party software is needed to build the software or feature?
 
-Notes
+**Notes**
 You can use UML to draw out the main classes that will be added and how they fit into the rest of the system. When you design your classes and methods, consider design principles such as SOLID. Design principles are the foundation of software design. Going through all of the principles is out of scope for this document, but I have several videos on my YouTube channel where I talk about them, so check those out if you’re not yet comfortable with the principles. On top of the principles are the design patterns, which are standardized solutions to particular software design problems. There are also quite a few videos about those on my channel. This is also a good section to describe specific edge cases that you want the system to handle correctly, for example what should happen in case of a network connection error.
-
 
 - Developers should have a solid understanding of Python and the Django web framework, as these will be the primary technologies used for backend development. Knowledge of Postgres is also necessary, as it will be used for database management.
 
