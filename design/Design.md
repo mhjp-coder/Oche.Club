@@ -19,7 +19,7 @@
 - What third-party software is needed to build the software or feature?
 
 **Notes**
-You can use UML to draw out the main classes that will be added and how they fit into the rest of the system. When you design your classes and methods, consider design principles such as SOLID. Design principles are the foundation of software design. Going through all of the principles is out of scope for this document, but I have several videos on my YouTube channel where I talk about them, so check those out if you’re not yet comfortable with the principles. On top of the principles are the design patterns, which are standardized solutions to particular software design problems. There are also quite a few videos about those on my channel. This is also a good section to describe specific edge cases that you want the system to handle correctly, for example what should happen in case of a network connection error.
+You can use UML to draw out the main classes that will be added and how they fit into the rest of the system. When you design your classes and methods, consider design principles such as SOLID. Design principles are the foundation of software design. On top of the principles are the design patterns, which are standardized solutions to particular software design problems. This is also a good section to describe specific edge cases that you want the system to handle correctly, for example what should happen in case of a network connection error.
 
 - Developers should have a solid understanding of Python and the Django web framework, as these will be the primary technologies used for backend development. Knowledge of Postgres is also necessary, as it will be used for database management.
 
