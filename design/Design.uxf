@@ -1,1 +1,84 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>275</x><y>22</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Team
+
+-
+
+-id:
+-team_name:
+-player_ids: list[ uuid ]
+
+-
+
++get_team_name(): string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>11</x><y>22</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Player
+
+-
+
+-id: uuid
+-first_name: string
+-last_name: string
+-statistics:
+
+-
+
++get_player_name(): string
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>242</x><y>264</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Game
+
+--
+
+-id: uuid
+-player_or_team_ids: list[ uuid ]
+-team_game: bool
+-game_complete: bool
+-winner: uuid
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>506</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Tournament
+
+--
+
+
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>539</x><y>22</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Statistics
+
+--
+
+
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>264</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Set
+--
+
+-id: uuid
+-player_or_team_ids: list[ uuid ]
+-team_game: bool
+-game_complete: bool
+-winner: uuid
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>264</y><w>231</w><h>209</h></coordinates><panel_attributes>
+Leg
+
+--
+
+-id: uuid
+-player_or_team_ids: list[ uuid ]
+-team_game: bool
+-game_complete: bool
+-winner: uuid
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

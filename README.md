@@ -12,9 +12,4 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Installation
 
-Start Dev Server
-```docker-compose -f docker-compose.dev.yml up -d```
-
-Start Prod Server
-```docker-compose -f docker-compose.prod.yml up -d```
-FIXME: Production server is not working yet.
+TODO: Install instructions.

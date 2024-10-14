@@ -2,24 +2,32 @@
 # Structural
 
 * Player
-  * player_id
-  * name
+  * id
+  * first_name
+  * last_name
   * statistics
 
 * Team
-  * team_id
+  * id
   * team_name
   * player_ids
 
 * Game
-  * game_id
-  * player_ids
-  * team_ids
-  * scores
+  * id
+  * player_or_team_ids
+  * team_game
   * game_status
 
+* Statistics
+  * player_id
+  * games_played
+  * games_won
+  * games_lost
+  * win_percentage
+  * loss_percentage
+
 * Tournament
-  * tournament_id
+  * id
   * game_ids
   * team_ids
   * tournament_status

@@ -1,0 +1,10 @@
+[project]
+name = "oche_club"
+version = "0.1.0"
+description = "Oche.Club, is a comprehensive Dart Management System"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["reflex"]
+
+[tool.uv]
+dev-dependencies = []
